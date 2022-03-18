@@ -49,19 +49,13 @@ def parse_file(file):
     return lessons_data
 
 
-
 out = parse_file("marks_data/11-2.html")
 print(j.dumps(out, indent=2, ensure_ascii=False))
 
+
+
+'''
 # print(int(dp.parse('10 июля 2021 г. в 7:45').timestamp()))
-
-
-
-
-
-'''lates, props, illns,
-
-
 from datetime import datetime
 import locale
 
@@ -72,7 +66,6 @@ for k, v in d.items():
     date_string = date_string.replace(k, v)
 ru_date_object = datetime.strptime(date_string , 'Добавлено: %A, %d %B %Y г. в %H:%M:%S')
 print(ru_date_object)
-
 
   <td class="tac" style="text-align:left;">
   	<span title="Ответ на уроке, 8 сентября 2020, 2 урок ">4</span> 
